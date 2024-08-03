@@ -1,14 +1,13 @@
-import express from "express"
-import bodyParser from "body-parser"
+import express from "express";
+import bodyParser from "body-parser";
 
-import { todoRoutes } from "./todo"
+import { todoRoutes } from "./todo";
 
-
-const app = express()
+const app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json())
+app.use(bodyParser.json());
 
-app.use(todoRoutes)
+app.use(todoRoutes);
 
-app.listen(3000)
+app.listen(3000);
